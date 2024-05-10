@@ -1,0 +1,68 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+.job-card {
+  margin: 15px;
+  width: 375px;
+  height: 525px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  
+}
+.company-image {
+  width: 75px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.basic-details {
+  display: flex;
+}
+
+.other-details {
+  margin-left: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toggle-description {
+  background-color: none;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  left: 130px;
+  top: 10px;
+}
+
+.job-description {
+  max-height: 250px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.easy-apply{
+  position: relative;
+  left: 130px;
+  top: 12px;
+}
+
+.experience-required{
+  position: relative;
+  top: 10px;
+}
