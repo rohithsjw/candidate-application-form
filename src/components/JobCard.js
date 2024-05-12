@@ -20,7 +20,7 @@ const JobCard = ({job,index})=>{
                             <div>{job.location}</div>
                         </div>
                     </div>
-                    <div>Estimated salary: {job.minJdSalary} - {job.maxJdSalary}</div>
+                    <div>{job.minJdSalary && job.maxJdSalary ? "Estimated salary :"+job.minJdSalary+' - '+job.maxJdSalary+" LPA" :""}</div>
                     <div className='job-description' style={{ maxHeight: expandedIndex === index ? 'none' : '250px' }}>
                         <p className='description'>{job.jobDetailsFromCompany}</p>
                     </div>
@@ -28,7 +28,7 @@ const JobCard = ({job,index})=>{
                         {expandedIndex === index ? 'Collapse' : 'Expand'}
                     </button>
                     <div className='experience-required'>
-                        <label>Minimum Experience: {job.minExp} </label>
+                        {job.minExp && <label>Minimum Experience: {job.minExp} </label>}
                     </div>  
                     <button className='easy-apply'> Esay Apply</button>  
                 </div>
